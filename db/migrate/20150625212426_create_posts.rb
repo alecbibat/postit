@@ -4,6 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :url
       t.string :title
       t.text   :description
+      t.add_foreign_key :fk_username
     end
   end
 end
